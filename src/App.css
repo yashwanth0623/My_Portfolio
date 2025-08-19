@@ -1,0 +1,45 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a202c; /* New: Deep charcoal-navy background */
+  color: #E2E8F0; /* New: Soft off-white text */
+  overflow-x: hidden;
+}
+
+/* Section Padding */
+section {
+  padding: 60px 15px;
+}
+
+.section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #E2E8F0;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+/* New gradient underline for section titles */
+.section-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #6366F1, #06B6D4);
+  bottom: 0;
+  left: calc(50% - 30px);
+  border-radius: 2px;
+}
+/* --- New styles for Red Headings --- */
+
+/* Target the section titles for Education and Skills */
+#education .section-title,
+#skills .section-title {
+  color: #EF4444; /* A modern, vibrant red */
+}
+
+/* Change the underline to match the new red heading color */
+#education .section-title::after,
+#skills .section-title::after {
+  background: #EF4444; /* Solid red to match the text */
+}

@@ -1,0 +1,28 @@
+.contact-section {
+  background-color: #2d3748; /* Matching the 'About' section */
+  border-radius: 15px;
+  padding: 50px 30px;
+}
+
+/* New styles for better visibility, same as the 'About' section fix */
+.contact-section p {
+  color: #CBD5E0; /* Brighter, legible text color */
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Making the labels like "Email:" even more prominent */
+.contact-section p strong {
+    color: #E2E8F0;
+}
+
+.contact-section a {
+  color: #06B6D4; /* Cyan for email link */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.contact-section a:hover {
+  color: #6366F1; /* Indigo on hover */
+}

@@ -1,0 +1,12 @@
+.about-section {
+  background-color: #2d3748; /* Dark grayish-blue secondary background */
+  border-radius: 15px;
+  padding: 50px 30px;
+}
+
+/* Make the main paragraph text brighter and more readable */
+.about-section .lead {
+  color: #CBD5E0; /* New: Brighter, more legible text color */
+  font-size: 1.1rem;
+  line-height: 1.7; /* Improved spacing between lines */
+}

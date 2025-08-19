@@ -1,0 +1,22 @@
+/* A modern, blurred background for the sticky navbar */
+.navbar-custom {
+  background-color: rgba(26, 32, 44, 0.85) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand-custom {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #06B6D4 !important; /* New: Bright cyan accent on hover */
+}

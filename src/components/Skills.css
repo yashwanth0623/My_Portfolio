@@ -1,0 +1,40 @@
+.skill-card {
+  padding: 20px;
+  background-color: #2d3748;
+  border-radius: 10px;
+  transition: transform 0.3s ease, border-color 0.3s, box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4A5568;
+  /* New: Add a subtle shadow here too for consistency */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  border-color: #06B6D4;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  /* New: REMOVED the grayscale filter for immediate color and visibility */
+  filter: grayscale(0%);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover .skill-logo {
+  transform: scale(1.1);
+}
+
+/* New: Ensure the skill name text is bright and clear */
+.skill-card p {
+  color: #E2E8F0;
+  font-weight: 500;
+  margin-top: 1rem;
+}
