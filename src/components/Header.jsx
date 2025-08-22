@@ -1,28 +1,28 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import './Home.css';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import './Header.css';
 
-function Home() {
+function Header() {
   return (
-    <Container fluid className="home-section">
-      <div className="home-content">
-        <div className="profile-pic-placeholder mb-4"></div>
-        <h1 className="display-4 fw-bold">M YASHWANTH</h1>
-        <p className="lead">Aspiring AI & Machine Learning Engineer | Full Stack Developer</p>
-        
-        {/* Updated structure for the social buttons layout */}
-        <div className="social-links-wrapper mt-4">
-          <div className="d-flex justify-content-center flex-wrap">
-            <a href="https://github.com/yashwanth0623" target="_blank" rel="noopener noreferrer" className="btn btn-social me-2 mb-2">GitHub</a>
-            <a href="https://www.linkedin.com/in/yashwanth-m-/" target="_blank" rel="noopener noreferrer" className="btn btn-social ms-2 mb-2">LinkedIn</a>
-          </div>
-          <div className="d-flex justify-content-center">
-            <a href="https://x.com/yashwanth_zzz" target="_blank" rel="noopener noreferrer" className="btn btn-social mt-2">X (Twitter)</a>
-          </div>
-        </div>
-      </div>
-    </Container>
+    <Navbar expand="lg" sticky="top" className="navbar-custom" role="navigation" aria-label="Main Navigation">
+      <Container>
+        <Navbar.Brand href="#home" className="navbar-brand-custom">
+          M YASHWANTH
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="main-navbar" className="navbar-toggle-custom" />
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="ms-auto nav-links">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#education">Education</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Home;
+export default Header;
